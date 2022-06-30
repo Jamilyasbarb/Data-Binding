@@ -1,0 +1,6 @@
+<div class="container">
+    <label for="">Type your Name:</label>
+    <input type="text" class="form-control" (input)="onName($event)" [(ngModel)]="name">
+    <p> {{ name }} </p>
+    <button class="btn btn-primary" [disabled]="!enableButton" (click)="sendName()">Send name</button>
+</div>
